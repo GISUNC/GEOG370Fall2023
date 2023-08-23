@@ -70,15 +70,25 @@ var UNCdates = {
             Object.keys(this.hw).forEach((e,i)=>{
                     t.setDate(t.getDate()+ this.hw[e])
                 // console.log(t.toDateString())
-                this.hw[e] = t.toDateString()
+                this.hw[e] = t.toDateString() //left it as date 
                 this.verifyDates(t,e)
                 })
     } ,  
     writeDates(){
         var tagDates = document.getElementsByClassName('date')
         for (var i=0; i<tagDates.length; i++){
-        tagDates[i].innerHTML = this.hw[tagDates[i].innerHTML]  + ' at 11:55 pm'
+        tagDates[i].innerHTML = (this.hw[tagDates[i].innerHTML])  + ' at 11:55 pm' // I should add an error control here in case there is no key for the date
     }
+    },
+
+    beforeDate(){ // i will only apply a one week before HW rule in the future I should try to code it similar to assignScheduleDate so I can add different dates if needed. 
+        var tagDates = document.getElementsByClassName('before')
+        for (var i=0; i<tagDates.length; i++){
+            var date = new Date(Date.parse(this.hw[tagDates[i].innerHTML]) - (1000*60*60*24*6))
+            console.log((date.toDateString()))
+            tagDates[i].innerHTML = (date.toDateString()) // I should add an error control here in case there is no key for the date
+    }
+
     },
     verifyDates(hwDate, daHW){
         if (hwDate > new Date(this.classesEnd)) {alert(daHW + " is after the last day")}
