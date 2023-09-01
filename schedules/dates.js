@@ -17,9 +17,9 @@ var UNCdates = {
     conflict:0,
     alert: 'on',
     hw:{
-        'hw1':9,
+        'hw1':11,
         'hw2':7,
-        'hw3':7,
+        'hw3':5,
         'hw4':5,
         'hw5':11,
         'hw6pt1':5,
