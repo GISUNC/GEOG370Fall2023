@@ -19,9 +19,9 @@ var UNCdates = {
     hw:{
         'hw1':11,
         'hw2':7,
-        'hw3':5,
+        'hw3':7,
         'hw4':5,
-        'hw5':11,
+        'hw5':9,
         'hw6pt1':5,
         'hw6pt2':7,
         'hw7': 4, 
@@ -36,11 +36,11 @@ var UNCdates = {
             day4:'Sharing our maps pt1 / Github',
             day5:'Sharing our maps pt2 / GPS',
             day6:'Projections',
-            day7:'Projections and Georeferencing',
-            day8:'Exercise: georeference UNC maps and create tiles',
-            day9:'Test 1',
-            day10: 'Webmaps',
-            day11: 'Tables',
+            day7: '-', //'Projections and Georeferencing',
+            day8: 'GPS and Georeferencing',
+            day9:'Exercise: georeference UNC maps and create tiles', // Test
+            day10: 'Tables',// 'Webmaps',
+            day11: 'Test1', //'Tables',
             day12: 'Choropleths',// check date
             day13: 'Classification Schemes and Ratios',
             day14: 'Apply classification and ratios to your data',
