@@ -26,8 +26,8 @@ var UNCdates = {
         'hw6pt2':7,
         'hw7': 4, 
         'hw8':24,// spring break
-        'hw9':7,
-        'hw10':11,
+        'hw9':9,
+        'hw10':9,
         },
         topics:{
             day1:'Introduction to class',
